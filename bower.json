@@ -1,0 +1,22 @@
+{
+  "name": "SciCal",
+  "version": "0.0.1-beta",
+  "homepage": "https://github.com/neo13/SciCal",
+  "authors": [
+    "Neo13<a.derakhshan.iut@gmail.com>"
+  ],
+  "description": "A scientific calculator by Javascript",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "function-plot": "~1.16.1"
+  }
+}
