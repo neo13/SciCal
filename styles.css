@@ -27,3 +27,72 @@ div#key-container button{
 div#type-container button {
 	width: 69.2px;
 }
+table.key-pad {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+table.key-pad tr{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+table.key-pad tr td {
+	width: 20%;
+	color: #FFF;
+	background-color: #222;
+	border-color: #222;
+	margin-bottom: 0px;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	white-space: nowrap;
+	padding: 10px 18px;
+	font-size: 15px;
+	line-height: 1.42857;
+	border-radius: 0px;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+table#type-key-pad tr td {
+	width: 12.5%;
+	background-color: #2780E3;
+	border-color: #2780E3;
+	line-height: 1.52857;
+}
+table#type-key-pad tr td:hover,
+table#type-key-pad tr td.active{
+	color: #FFF;
+	background-color: #1967BE;
+	border-color: #1862B5;
+}
+table#type-key-pad tr td.ml {
+	border: 2px solid #3F3F3F;
+}
+table#type-key-pad tr td.mr {
+	border-right: 2px solid #3F3F3F;
+}
+table.key-pad tr td.blue {
+	color: #FFF;
+	background-color: #2780E3;
+	border-color: #2780E3;
+}
+table.key-pad tr td:hover {
+	color: #FFF;
+	background-color: #090909;
+	border-color: #040404;
+}
+table.key-pad tr td.blue:hover {
+	color: #FFF;
+	background-color: #1967BE;
+	border-color: #1862B5;
+}

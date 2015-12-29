@@ -19,20 +19,18 @@
 				<div class="col-md-12">
 					<div class="row" id="input-container">
 						<div class="col-md-6" id="type-container">
-							<div class="btn-group" role="group">
-								<button type="botton" class="btn btn-primary active">2D</button>
-								<button type="botton" class="btn btn-primary">3D</button>
-							</div>
-							<div class="btn-group" role="group">
-								<button type="botton" class="btn btn-primary">HEX</button>
-								<button type="botton" class="btn btn-primary active">DEC</button>
-								<button type="botton" class="btn btn-primary">OCT</button>
-								<button type="botton" class="btn btn-primary">BIN</button>
-							</div>
-							<div class="btn-group" role="group">
-								<button type="botton" class="btn btn-primary">DEG</button>
-								<button type="botton" class="btn btn-primary active">RAD</button>
-							</div>
+							<table id="type-key-pad" class="key-pad">
+								<tr>
+									<td>2D</td>
+									<td class="mr">3D</td>
+									<td class="ml">HEX</td>
+									<td>DEC</td>
+									<td>OCT</td>
+									<td class="mr">BIN</td>
+									<td class="ml">DEG</td>
+									<td>RAD</td>
+								</tr>
+							</table>
 						</div>
 						<div class="col-md-6">
 							<input id="eqInput" class="form-control" type="text" placeholder="...">	
@@ -40,118 +38,81 @@
 					</div>
 					<div class="row" id="key-container">
 						<div class="col-md-6">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="btn-group" role="group">
-										<button class="btn btn-default">(</button>
-										<button class="btn btn-default">)</button>
-										<button class="btn btn-default">F-E</button>
-										<button class="btn btn-default">M</button>
-										<button class="btn btn-default">ME</button>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="btn-group" role="group">
-										<button class="btn btn-default">x&#178;</button>
-										<button class="btn btn-default">sin</button>
-										<button class="btn btn-default">cos</button>
-										<button class="btn btn-default">tan</button>
-										<button class="btn btn-default">&plusmn;</button>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="btn-group" role="group">
-										<button class="btn btn-default">x<sup>y</sup></button>
-										<button class="btn btn-default">sin&#8315;&#185;</button>
-										<button class="btn btn-default">cos&#8315;&#185;</button>
-										<button class="btn btn-default">tan&#8315;&#185;</button>
-										<button class="btn btn-default">&radic;</button>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="btn-group" role="group">
-										<button class="btn btn-default">10<sup>x</sup></button>
-										<button class="btn btn-default">sinh</button>
-										<button class="btn btn-default">cosh</button>
-										<button class="btn btn-default">tgh</button>
-										<button class="btn btn-default">e<sup>x</sup></button>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="btn-group" role="group">
-										<button class="btn btn-default"><sup>y</sup>&radic;x</button>
-										<button class="btn btn-default">log</button>
-										<button class="btn btn-default">ln</button>
-										<button class="btn btn-default">n!</button>
-										<button class="btn btn-default">x<sup>-1</sup></button>
-									</div>
-								</div>
-							</div>
+							<table id="left-key-pad" class="key-pad">
+								<tr>
+									<td>(</td>
+									<td>)</td>
+									<td>F-E</td>
+									<td>M</td>
+									<td>ME</td>
+								</tr>
+								<tr>
+									<td>x&#178;</td>
+									<td>sin</td>
+									<td>cos</td>
+									<td>tan</td>
+									<td>&plusmn;</td>
+								</tr>
+								<tr>
+									<td>x<sup>y</sup></td>
+									<td>sin&#8315;&#185;</td>
+									<td>cos&#8315;&#185;</td>
+									<td>tan&#8315;&#185;</td>
+									<td>&radic;</td>
+								</tr>
+								<tr>
+									<td>10<sup>x</sup></td>
+									<td>sinh</td>
+									<td>cosh</td>
+									<td>tanh</td>
+									<td>e<sup>x</sup></td>
+								</tr>
+								<tr>
+									<td><sup>y</sup>&radic;x</td>
+									<td>log</td>
+									<td>ln</td>
+									<td>n!</td>
+									<td>x<sup>-1</sup></td>
+								</tr>
+							</table>
 						</div>
 						<div class="col-md-6">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="btn-group" role="group">
-										<button class="btn btn-default">e</button>
-										<button class="btn btn-default">C</button>
-										<button class="btn btn-default">CE</button>
-										<button class="btn btn-default">&larr;</button>
-										<button class="btn btn-default">&divide;</button>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="btn-group" role="group">
-										<button class="btn btn-default">&pi;</button>
-										<button class="btn btn-default">7</button>
-										<button class="btn btn-default">8</button>
-										<button class="btn btn-default">9</button>
-										<button class="btn btn-default">&times;</button>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="btn-group" role="group">
-										<button class="btn btn-default">Mod</button>
-										<button class="btn btn-default">4</button>
-										<button class="btn btn-default">5</button>
-										<button class="btn btn-default">6</button>
-										<button class="btn btn-default">-</button>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="btn-group" role="group">
-										<button class="btn btn-default">%</button>
-										<button class="btn btn-default">1</button>
-										<button class="btn btn-default">2</button>
-										<button class="btn btn-default">3</button>
-										<button class="btn btn-default">+</button>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="btn-group" role="group">
-										<button class="btn btn-default">|x|</button>
-										<button class="btn btn-default">0</button>
-										<button class="btn btn-default">.</button>
-										<button class="btn btn-default"><i>i</i></button>
-										<button class="btn btn-primary">=</button>
-									</div>
-								</div>
-							</div>
+							<table id="left-key-pad" class="key-pad">
+								<tr>
+									<td>e</td>
+									<td>C</td>
+									<td>CE</td>
+									<td>&larr;</td>
+									<td>&divide;</td>
+								</tr>
+								<tr>
+									<td>&pi;</td>
+									<td>7</td>
+									<td>8</td>
+									<td>9</td>
+									<td>&times;</td>
+								</tr>
+								<tr>
+									<td>Mod</td>
+									<td>4</td>
+									<td>5</td>
+									<td>6</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>%</td>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>+</td>
+								</tr>
+								<tr>
+									<td colspan="2">0</td>
+									<td>.</td>
+									<td>|x|</td>
+									<td class="blue">=</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 				</div>
