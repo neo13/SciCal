@@ -1,2 +1,161 @@
+<doctype hmtl>
 <html>
+	<head>
+		<title>SciCal</title>
+		<meta charset=utf-8>
+		<meta name="description" content="A Scientific Calculator by Javascript">
+		<meta name="aurthor" content="Neo13 <a.derakhshan.iut@gmail.com>">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="bower_components/bootswatch/cosmo/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" id="plot-container">
+				
+			</div>
+			<div class="row" id="keyboard-container">
+				<div class="col-md-12">
+					<div class="row" id="input-container">
+						<div class="col-md-6" id="type-container">
+							<div class="btn-group" role="group">
+								<button type="botton" class="btn btn-primary active">2D</button>
+								<button type="botton" class="btn btn-primary">3D</button>
+							</div>
+							<div class="btn-group" role="group">
+								<button type="botton" class="btn btn-primary">HEX</button>
+								<button type="botton" class="btn btn-primary active">DEC</button>
+								<button type="botton" class="btn btn-primary">OCT</button>
+								<button type="botton" class="btn btn-primary">BIN</button>
+							</div>
+							<div class="btn-group" role="group">
+								<button type="botton" class="btn btn-primary">DEG</button>
+								<button type="botton" class="btn btn-primary active">RAD</button>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<input id="eqInput" class="form-control" type="text" placeholder="...">	
+						</div>
+					</div>
+					<div class="row" id="key-container">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="btn-group" role="group">
+										<button class="btn btn-default">(</button>
+										<button class="btn btn-default">)</button>
+										<button class="btn btn-default">F-E</button>
+										<button class="btn btn-default">M</button>
+										<button class="btn btn-default">ME</button>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="btn-group" role="group">
+										<button class="btn btn-default">x&#178;</button>
+										<button class="btn btn-default">sin</button>
+										<button class="btn btn-default">cos</button>
+										<button class="btn btn-default">tan</button>
+										<button class="btn btn-default">&plusmn;</button>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="btn-group" role="group">
+										<button class="btn btn-default">x<sup>y</sup></button>
+										<button class="btn btn-default">sin&#8315;&#185;</button>
+										<button class="btn btn-default">cos&#8315;&#185;</button>
+										<button class="btn btn-default">tan&#8315;&#185;</button>
+										<button class="btn btn-default">&radic;</button>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="btn-group" role="group">
+										<button class="btn btn-default">10<sup>x</sup></button>
+										<button class="btn btn-default">sinh</button>
+										<button class="btn btn-default">cosh</button>
+										<button class="btn btn-default">tgh</button>
+										<button class="btn btn-default">e<sup>x</sup></button>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="btn-group" role="group">
+										<button class="btn btn-default"><sup>y</sup>&radic;x</button>
+										<button class="btn btn-default">log</button>
+										<button class="btn btn-default">ln</button>
+										<button class="btn btn-default">n!</button>
+										<button class="btn btn-default">x<sup>-1</sup></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="btn-group" role="group">
+										<button class="btn btn-default">e</button>
+										<button class="btn btn-default">C</button>
+										<button class="btn btn-default">CE</button>
+										<button class="btn btn-default">&larr;</button>
+										<button class="btn btn-default">&divide;</button>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="btn-group" role="group">
+										<button class="btn btn-default">&pi;</button>
+										<button class="btn btn-default">7</button>
+										<button class="btn btn-default">8</button>
+										<button class="btn btn-default">9</button>
+										<button class="btn btn-default">&times;</button>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="btn-group" role="group">
+										<button class="btn btn-default">Mod</button>
+										<button class="btn btn-default">4</button>
+										<button class="btn btn-default">5</button>
+										<button class="btn btn-default">6</button>
+										<button class="btn btn-default">-</button>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="btn-group" role="group">
+										<button class="btn btn-default">%</button>
+										<button class="btn btn-default">1</button>
+										<button class="btn btn-default">2</button>
+										<button class="btn btn-default">3</button>
+										<button class="btn btn-default">+</button>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="btn-group" role="group">
+										<button class="btn btn-default">|x|</button>
+										<button class="btn btn-default">0</button>
+										<button class="btn btn-default">.</button>
+										<button class="btn btn-default"><i>i</i></button>
+										<button class="btn btn-primary">=</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

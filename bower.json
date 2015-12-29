@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.6",
-    "function-plot": "~1.16.1"
+    "function-plot": "~1.16.1",
+    "normalize-css": "normalize.css#~3.0.3",
+    "bootswatch": "~3.3.6+1"
   }
 }

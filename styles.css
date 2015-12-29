@@ -1,0 +1,29 @@
+body {
+	background-color: #333;
+	background: url("img/imagedoc-darknoise.png");
+}
+div#plot-container {
+	height: 57%;
+}
+div#keyboard-container {
+	height: 43%;
+	padding-top: 10px;
+	background: #3F3F3F none repeat scroll 0% 0%;
+	border-top: 2px solid #176868;
+}
+input#eqInput {
+	background: #555;
+	border: none;
+	border-top: 2px solid #657734;
+	color: #eee;
+	text-align: right;
+}
+input#eqInput:focus {
+	box-shadow: none;
+}
+div#key-container button{
+	width: 111.8px;
+}
+div#type-container button {
+	width: 69.2px;
+}
