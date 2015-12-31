@@ -1,0 +1,38 @@
+{
+  "name": "SciCal",
+  "version": "0.0.1-beta",
+  "homepage": "https://github.com/neo13/SciCal",
+  "authors": [
+    "Neo13<a.derakhshan.iut@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neo13/scical.git"
+  },
+  "description": "A scientific calculator by Javascript",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "make": "bower install",
+    "install": "browserify -t babelify lib/app.js -o dist/main.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ]
+  },
+  "dependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.3.16",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "babelify": "^7.2.0",
+    "bower": "^1.7.2",
+    "browserify": "^12.0.1",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
