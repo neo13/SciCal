@@ -19,7 +19,7 @@ describe('A node', function () {
 			n3 = new Node(n6, n7, 2),
 			n2 = new Node(n4, n5, 2),
 			n1 = new Node(n2, n3, 1);
-		expect(n1.right.right).to.equal(n4);
+		expect(n1.left.left).to.equal(n4);
 		done();
 	});
 });
